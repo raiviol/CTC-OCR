@@ -2,7 +2,7 @@
 
 This is a fully convolutional text classifier that uses [Connectionist Temporal Classification](http://www.cs.toronto.edu/%7Egraves/icml_2006.pdf).
 
-The classifier doesn't include any recurrent or linear layers in it, but models sequences with only convolutional layers, which makes it fast and easy to train. Recurrent A [ResNet](https://arxiv.org/abs/1512.03385) model is used as a base for the network. Facebook's [rosetta system](http://www.kdd.org/kdd2018/accepted-papers/view/rosetta-large-scale-system-for-text-detection-and-recognition-in-images), utilizes a similar kind of model for reading text. [Here](https://arxiv.org/abs/1709.04303) is another example used as inspiration for this network.
+The classifier doesn't include any recurrent or linear layers in it, but models sequences with only convolutional layers, which makes it fast and easy to train. A [ResNet](https://arxiv.org/abs/1512.03385) model is used as a base for the network. Facebook's [rosetta system](http://www.kdd.org/kdd2018/accepted-papers/view/rosetta-large-scale-system-for-text-detection-and-recognition-in-images) utilizes a similar kind of model for reading text. [Here](https://arxiv.org/abs/1709.04303) is another example used as inspiration for this network.
 
 Baidu Research's [warp-ctc](https://github.com/baidu-research/warp-ctc) is used to calculate the ctc-loss.
 
@@ -12,20 +12,20 @@ Baidu Research's [warp-ctc](https://github.com/baidu-research/warp-ctc) is used 
 
 Other versions of some dependencies might work, but are not tested.
 
-Python 3.6
-PyTorch 0.4
-torchvision 0.2
-
-warp-ctc:
+warp-ctc:  
 Installation instructions for pyTorch bindings can be found [here](https://github.com/SeanNaren/warp-ctc).
-
-numpy 1.14
-opencv 3.4
-sklearn 0.19
-matplotlib 2.2
-h5py 2.8
-tqdm 4.24
-six 1.11
+  
+Python 3.6  
+PyTorch 0.4  
+torchvision 0.2  
+  
+numpy 1.14  
+opencv 3.4  
+sklearn 0.19  
+matplotlib 2.2  
+h5py 2.8  
+tqdm 4.24  
+six 1.11  
 
 CTC decoder (decoder.py) is copied from Sean Naren's [DeepSpeech repository](https://github.com/SeanNaren/deepspeech.pytorch).
 
