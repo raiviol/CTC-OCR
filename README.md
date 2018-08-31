@@ -32,13 +32,13 @@ CTC decoder (decoder.py) is copied from Sean Naren's [DeepSpeech repository](htt
 ## Usage
 Model is trained by calling:
 ```bash
-main.py --{param} {value}
+python main.py --{param} {value}
 ```
 Default parameters can be found in main.py.
 
 For information on parameters call:
 ```bash
-main.py --help 
+python main.py --help 
 ```
 
 Dataset should be in [fuel dataset](https://fuel.readthedocs.io/en/latest/h5py_dataset.html) format, for other formats you might have to edit load_data -function in util.py.
